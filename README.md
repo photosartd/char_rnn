@@ -1,0 +1,1 @@
+Char RNN for creation of texts
