@@ -1,0 +1,52 @@
+ACTION = 'action'
+FILENAME = '--filename'
+SAVEPATH = '--savepath'
+VERBOSE = '--verbose'
+MODEL = '--model'
+BATCH_SIZE = '--batch_size'
+SEQ_LEN = '--seq_len'
+HIDDEN_SIZE = '--hidden_size'
+EMBEDDING_SIZE = '--embedding_size'
+DEVICE = '--device'
+LAYERS = '--layers'
+EPOCHS = '--epochs'
+LEN = '--len'
+START = '--start'
+MIN_LOSS = '--min_loss'
+TEMP = '--temp'
+
+TRAIN = 'train'
+GENERATE = 'generate'
+LSTM = 'lstm'
+GRU = 'gru'
+
+HELP_STRING = 'This is a CLI for training CHAR RNN and generating text'
+ACTION_HELP = f'{TRAIN}: for training RNN; {GENERATE}: for generating text'
+MODEL_HELP = 'lstm or gru; default lstm'
+FILENAME_HELP = 'Filepath with text for training'
+SAVEPATH_HELP = 'Path to save the model to; .pt file extension'
+HIDDEN_SIZE_HELP = 'Number of the hidden states in LSTM/GRU'
+DEVICE_HELP = 'Device where to train NN; cpu or cuda options'
+EPOCHS_HELP = 'Number of epochs to train your model'
+LEN_HELP = 'Length of text to generate'
+VERBOSE_HELP = 'Allow verbosity while training'
+LOAD_WARNING = 'Something went wrong while loading model'
+START_HELP = 'letter/word to start text generation'
+TEMP_HELP = 'Randomness of text generation; float, 1.0 means no changes to prediction'
+
+DEFAULT_BATCH_SIZE = 16
+DEFAULT_SEQ_LEN = 256
+DEFAULT_HIDDEN_SIZE = 128
+DEFAULT_EMBEDDING_SIZE = 128
+DEFAULT_LAYERS = 2
+DEFAULT_EPOCHS = 2000
+OPTIMIZER_LR = 1e-2
+DEFAULT_DEVICE = 'cpu'
+DEFAULT_MIN_LOSS = 0.56
+DEFAULT_LEN = 200
+DEFAULT_TEMP = 1.0
+DEFAULT_SAVEPATH = 'model.pt'
+
+TOKEN_TO_IDX = 'token_to_idx'
+IDX_TO_TOKEN = 'idx_to_token'
+PKL = '.pkl'
